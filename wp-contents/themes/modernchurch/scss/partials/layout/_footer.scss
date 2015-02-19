@@ -1,0 +1,50 @@
+.global-footer {
+	background-color: $primary-color;
+	margin: 0;
+	padding: 74px 0;
+	@include row();
+
+	.wrapper {
+		@extend %max-wrap;
+	}
+
+	a {
+		color: $white;
+
+		&:hover {
+		  color: darken($white, 12%);
+		}
+	}
+
+	.church-info {
+		@include span-columns(4);
+		
+		.ftr-logo-wrapper {
+
+			img {
+				height: auto;
+				max-width: 223px;
+				width: 100%;
+			}
+
+		} //.ftr-logo-wrapper
+
+		.ftr-social-networking {
+			margin: 31px 0 0;
+			padding: 0 0 15px;
+			@include row();
+
+			li {
+				@extend %left;
+				margin-right: 30px;
+			}
+
+		} //.ftr-social-networking
+
+		.copyright {
+			color: $white;
+			margin: 31px 0 0;
+		}
+
+	} //.church-info
+}

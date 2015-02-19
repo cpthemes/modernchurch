@@ -1,0 +1,27 @@
+.btn {
+	display: inline-block;
+	padding: 12px 36px;
+	text-decoration: none;
+	@include border-top-radius(24px);
+	@include border-bottom-radius(24px);
+}
+
+.primary-btn {
+	background-color: $primary-color;
+	color: $white;
+
+	&:hover {
+		background-color: darken($primary-color, 8%);
+		color: $white;
+	}
+}
+
+.secondary-btn {
+	background-color: $secondary-color;
+	color: $white;
+
+	&:hover {
+		background-color: darken($secondary-color, 8%);
+		color: white;
+	}
+}

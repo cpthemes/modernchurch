@@ -1,0 +1,96 @@
+.global-header {
+
+	&:after {
+		@include clearfix;
+	}
+	
+	&.home {
+
+		.wrapper {
+			top: 36px;
+			z-index: 100;
+			@include horizontal-align;
+		}
+
+	} //&.home
+
+	&.sublevel {
+		background-color: $primary-color;
+		height: 96px;
+		padding: 36px 0;
+	}
+
+	.wrapper {
+		@extend %max-wrap;
+		position: relative;
+		@include row();
+	}
+
+	.logo-wrapper {
+		@extend %left;
+		height: 24px;
+
+		img {
+			height: 100%;
+			width: auto;
+		}
+	} //.logo-wrapper
+
+	.global-nav {
+		@extend %right;
+		padding: 0 48px 0 0;
+	}
+
+	.header-search {
+		background: url('../img/global/icon-search-header.png') no-repeat;
+		height: 18px;
+		position: absolute;
+		right: 48px;
+		top: 2px;
+		width: 18px;
+		z-index: 10;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.header-search-form {
+		background-color: $white;
+		border-bottom: 2px solid lighten($gray, 67%);
+		display: none;
+		height: 96px;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 200;
+
+		.form-wrapper {
+			@extend %max-wrap;
+			position: relative;
+		}
+
+		input[type="text"] {
+			background-color: transparent;
+			border: 0;
+			display: block;
+			height: 96px;
+			@include border-top-radius(0);
+			@include border-bottom-radius(0);
+		}
+
+		.search-close {
+			background: url('../img/global/icon-exit.png') no-repeat;
+			height: 18px;
+			position: absolute;
+			right: 48px;
+			top: 39px;
+			width: 18px;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+	}
+}

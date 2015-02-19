@@ -1,0 +1,43 @@
+* {
+	@include box-sizing(border-box);
+}
+
+%max-wrap {
+	margin: 0 auto;
+	max-width: 1284px;
+	padding: 0 48px;
+	width: 100%;
+}
+
+%left {
+	float: left;
+}
+
+%right {
+	float: right;
+}
+
+%lt-font {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300
+}
+
+%reg-font {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+%med-font {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+%bold-font {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+%cond-font {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+}

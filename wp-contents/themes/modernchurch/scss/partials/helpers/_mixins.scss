@@ -1,0 +1,26 @@
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-align {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@mixin pseudo {
+  content: "";
+  display: block;
+}
+
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+      box-shadow: $shadow;
+}

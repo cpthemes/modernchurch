@@ -1,0 +1,15 @@
+input[type="text"] {
+	border: 2px solid lighten($gray, 65%);
+	color: lighten($gray, 40%);
+	height: 48px;
+	outline: none;
+	padding: 0 12px;
+	width: 100%;
+	@include border-top-radius(5px);
+	@include border-bottom-radius(5px);
+
+	&:focus {
+		border-color: $primary-color;
+		color: $gray;
+	}
+}

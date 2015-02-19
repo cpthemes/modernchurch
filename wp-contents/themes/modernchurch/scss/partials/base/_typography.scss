@@ -1,0 +1,196 @@
+body {
+  @extend %reg-font;
+  color: $gray;
+  line-height: 1.5;
+}
+
+
+// Paragraphs
+p {
+  @extend %lt-font;
+  margin: 0 0 24px;
+
+  &.intro {
+    @extend %lt-font;
+    font-size: rem(29);
+    margin: 0 0 38px;
+  }
+
+}
+
+.contact-cta {
+
+  p {
+    font-size: rem(18);
+  }
+
+} //.contact-cta
+
+
+// Links 
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($primary-color, 12%);
+  }
+
+}
+
+// Headlines
+h1 {
+  @extend %bold-font;
+  font-size: rem(105);
+  line-height: 1.1;
+}
+
+h2 {
+  @extend %bold-font;
+  font-size: rem(56);
+  line-height: 1.3;
+}
+
+h3 {
+  @extend %bold-font;
+  font-size: rem(30);
+  line-height: 1.6;
+}
+
+h4 {
+  @extend %med-font;
+  font-size: rem(16);
+  line-height: 1.5;
+}
+
+.home {
+
+  h2 {
+    @extend %med-font;
+    font-size: rem(30);
+  }
+
+  h3 {
+    @extend %lt-font;
+    font-size: rem(56);
+  }
+
+} //.home
+
+aside {
+  @extend %lt-font;
+
+  h2 {
+    @extend %med-font;
+    font-size: rem(20);
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  .children {
+    font-size: rem(14);
+  }
+
+  caption {
+    @extend %reg-font;
+  }
+
+} //aside
+
+
+.widget_tag_cloud {
+  
+  a {
+    font-size: rem(14) !important;
+    text-transform: capitalize;
+  }
+
+} //.widget_tag_cloud
+
+
+// Buttons 
+.btn {
+  text-transform: uppercase;
+}
+
+
+// Navigation
+
+.global-nav {
+  
+  a {
+    @extend %med-font;
+    font-size: rem(14);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .sub-menu {
+
+    a {
+      @extend %lt-font;
+      font-size: rem(15);
+      text-transform: none;
+    }
+
+  } //.sub-menu
+
+} //.global-nav
+
+.header-search-form {
+  
+  input[type="text"] {
+    @extend %lt-font;
+    font-size: rem(30);
+  }
+
+}
+
+
+// Hero 
+
+.hero {
+  p {
+    @extend %lt-font;
+    font-size: rem(30);
+  }
+}
+
+// Home CTAS
+
+.hp-ctas {
+  @extend %med-font;
+}
+
+.light {
+  @extend %reg-font;
+}
+
+// Footer
+footer {
+  a {
+    font-size: rem(14);
+    text-transform: uppercase;
+  }
+
+  .menu-item-has-children {
+
+    > a {
+      @extend %med-font;
+      font-size: rem(20);
+      line-height: 1;
+    }
+
+  }
+
+  .copyright {
+    font-size: rem(13);
+  }
+}
+
+input[type="text"] {
+  @extend %lt-font;
+  font-size: rem(16);
+}
+

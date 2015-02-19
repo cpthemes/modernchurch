@@ -1,0 +1,51 @@
+.hp-ctas {
+	@extend %max-wrap;
+
+	ul {
+		border-right: 3px solid lighten($gray, 70%);
+		@include row();
+	}
+
+	li {
+		border-left: 3px solid lighten($gray, 70%);
+		height: 360px;
+		padding: 88px 24px 114px;
+		position: relative;
+		@include span-columns(4);
+
+		h2 {
+			margin: 0 0 21px;
+		}
+
+		a {
+			bottom: 66px;
+			position: absolute;
+		}
+
+		.second-line {
+			@extend %lt-font;
+			display: block;
+		}
+
+	}
+}
+
+.contact-cta {
+	background-color: lighten($gray, 70%);
+	margin: 0 auto;
+	padding: 80px 0 94px;
+
+	.wrapper {
+		@extend %max-wrap;
+		margin: 0 auto;
+		text-align: center;
+
+		h3 {
+			margin: 0 0 5px;
+		}
+
+		p {
+			margin: 0 0 42px;
+		}
+	}
+}

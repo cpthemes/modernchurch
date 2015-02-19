@@ -1,0 +1,22 @@
+{
+  "name": "ModernChurch",
+  "version": "1.0.0",
+  "authors": [
+    "CP Themes"
+  ],
+  "description": "This theme was designed by CP Themes",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery-waypoints": "~2.0.5",
+    "modernizr": "~2.8.3",
+    "reset-scss": "*",
+    "retina.js": "~1.3.0"
+  }
+}
